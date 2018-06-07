@@ -11,7 +11,7 @@
     </head>
 
     <body>
-
+    <div class="wrapper">
         <header>
             <div class="nameBox"><h1>Barbara Egel</h1></div>
             <div id="space"></div>
@@ -28,42 +28,40 @@
           
             <div class="grayBackground">
                 <div id="whiteBoxPortf">
-                    <div class=greenHeader><h1>Portfolio</h1></div>
-                    <table style="width:100%">
-                    <tr>
-                            <td id="hangMan"> 
+                    <div class="greenHeader"><h1>Portfolio</h1></div>
+                    <!--In last week's homework, I used a table to get the thumbnails lined up. I changed to two divs with floats so
+                    it would be easier to make it responsive. Somehow, the thumbnails are not in the white box anymore. I didn't change how any of my 
+                    html was "nested," so I'm not sure what's up. However, it does change to a single column after 640px, so yay?-->
+                    <div class="thumbnails">
+                        <div id="leftColumn">
+                            <div id="hangMan"> 
                                 <img src="http://lorempixel.com/125/125/technics/1/cc/" alt="man with iPad">
                                 <p>Hangman</p>
-                            </td>
-                            
-                        
-                            <td id="rpgGame">
+                            </div>
+                
+                            <div id="rpgGame">
                                 <img src="http://lorempixel.com/125/125/technics/2/cc/" alt="turntable">
                                 <p>RPG Game</p>
-                            </td>
-                            <td id="triviaGame">
+                            </div>
+                            <div id="triviaGame">
                                 <img src="http://lorempixel.com/125/125/technics/5/cc/" alt="earbuds">
                                 <p>Trivia Game</p>
-                            </td> 
-                        </tr>    
-                        <tr>
-                            <td id="rutgersInfoWidget">
+                            </div>
+                        </div>    
+                        <aside id="rightColumn">
+                            <div id="rutgersInfoWidget">
                                 <img src="http://lorempixel.com/125/125/technics/7/cc/" alt="smartphone">
                                 <p>Rutgers Info Widget</p>
-                            </td>
-                            <td id="rockPaperScissors">
+                            </div>
+                            <div id="rockPaperScissors">
                                 <img src="http://lorempixel.com/125/125/technics/9/cc/" alt="computer screen">
                                 <p>Rock Paper Scissors</p>
-                            </td>  
-                        </tr>
-                    </table>
+                            </div>  
+                        </aside>
+                    </div>
                 </div>
-            </div> <!--close gray background-->
+            </div> 
 
-        <footer>Copyright 2018</footer>
-
+        </div>
     </body>
-
-
-
-        <!-- For reasons I'm not smart enough to understand yet, this page loads super slowly. -->
+    <footer>Copyright 2018</footer>
